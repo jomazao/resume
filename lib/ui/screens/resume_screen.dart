@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume/ui/screens/widgets/skill_widget.dart';
 
 class ResumeScreen extends StatelessWidget {
   const ResumeScreen({Key? key}) : super(key: key);
@@ -76,6 +77,34 @@ class _Body extends StatelessWidget {
           Text(
             'Habilidades',
             style: TextStyle(fontSize: 20),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              SkillWidget(
+                name: 'Sketch',
+                backgroundColor: Colors.amberAccent,
+                image: 'assets/sketch_logo.png',
+              ),
+              SkillWidget(
+                name: 'Photoshop',
+                backgroundColor: Colors.blueAccent,
+                image: 'assets/photoshop_logo.png',
+              ),
+              SkillWidget(
+                name: 'Adobe XD',
+                backgroundColor: Colors.purpleAccent,
+                image: 'assets/xd_logo.png',
+              ),
+              SkillWidget(
+                name: 'Illustrator',
+                backgroundColor: Colors.orangeAccent,
+                image: 'assets/illustrator_logo.png',
+              ),
+            ],
           ),
         ],
       ),
