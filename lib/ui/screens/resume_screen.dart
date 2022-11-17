@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume/ui/screens/widgets/experience_widget.dart';
 import 'package:resume/ui/screens/widgets/skill_widget.dart';
 
 class ResumeScreen extends StatelessWidget {
@@ -65,8 +66,7 @@ class _Body extends StatelessWidget {
       ),
       //color: Colors.white,
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 23),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: ListView(
         children: [
           Text(
             'Desarrollador de software con experiencia en diferentes lenguajes y tecnologías especializado en aplicaciones móviles con Flutter. Apasionado por la tecnología y proyectos de alto impacto global',
@@ -105,6 +105,28 @@ class _Body extends StatelessWidget {
                 image: 'assets/illustrator_logo.png',
               ),
             ],
+          ),
+          Text(
+            'Experiencia',
+            style: TextStyle(fontSize: 20),
+          ),
+          ExperienceWidget(
+            experienceTime: 'Dec 2019 - present',
+            role: 'UI Designer',
+            company: 'Snap Inc',
+            companyLogo: 'assets/snap_logo.png',
+          ),
+          ExperienceWidget(
+            experienceTime: 'Jul 2019 - Dec 2019',
+            role: 'UI Designer',
+            company: 'Molotov',
+            companyLogo: 'assets/molotov_logo.png',
+          ),
+          ExperienceWidget(
+            experienceTime: 'Jan 2018 - Jul 2019',
+            role: 'UI Designer',
+            company: 'SNCF',
+            companyLogo: 'assets/uigo_logo.png',
           ),
         ],
       ),
