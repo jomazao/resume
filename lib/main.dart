@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resume/ui/screens/resume_screen.dart';
+import 'package:resume/ui/screens/test_screen.dart';
 
 void main() {
   runApp(const MySuperMegaHiperApplication());
@@ -28,7 +29,7 @@ class MySuperMegaHiperApplication extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: ResumeScreen(),
+      home: TestScreen(),
     );
   }
 }
